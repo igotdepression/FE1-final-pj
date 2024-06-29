@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #98c7a6; 
+    background-color: #A0937D; 
     height: 100%;
     width: 100%;
     display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con */
@@ -14,7 +14,7 @@ body {
     line-height: 1cm;
     width: 80%;
     margin: auto; /* Căn giữa container */
-    background-color: #98c7a6;
+    background-color: #A0937D;
 }
 
 h1 {
@@ -26,11 +26,14 @@ h1 img {
     width: 20cm; /* Chiều rộng của hình ảnh trong thẻ h1 */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-color: #000000;
+    background-color: #abc798;
 }
 
 h3 {
     text-align: center;
-    color: red; 
+    color: #FFA62F; 
     font-style: italic;
     font-weight: bold;
     font-size: 500%;
@@ -42,10 +45,12 @@ p {
 }
 
 .overview, .rules {
-    background: #709c3d;
+    background: #B6C7AA;
     padding: 20px; /* Khoảng cách bên trong */
     margin-bottom: 20px;
     border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
  
@@ -62,12 +67,24 @@ p {
     bottom: 20px; /* Cách đáy trang 20px */
     left: 50%; /* Đặt ở giữa theo chiều ngang */;
     transform: translateX(-50%); /* Điều chỉnh vị trí để căn giữa chính xác */
-    width: 80%; 
+    width: 80%;
 }
 
 .icon {
     text-align: center;
     cursor: pointer; /* Con trỏ chuột thay đổi khi di chuột qua */
+
+    border: 2px solid #000; /* Đặt viền cho icon */
+    padding: 10px; /* Khoảng cách bên trong icon */
+    border-radius: 5px; /* Bo tròn các góc của icon */
+    background-color: #F6E6CB; /* Màu nền của icon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho icon */
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Phóng to icon khi hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Tăng cường đổ bóng khi hover */
 }
 
 .icon img {
@@ -141,4 +158,5 @@ a {
     a {
         font-size: 25px;
     }
-}
+} 
+
